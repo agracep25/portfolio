@@ -1,4 +1,4 @@
-# Simple Static Portfolio Website by Laravel
+# Portfolio Website using Laravel
 
 This is a simple static portfolio website built with Laravel. The website showcases different projects, providing details like title, description, and images for each project. The purpose of this project is to create a personal portfolio to display your work in an organized and visually appealing manner.
 
@@ -59,25 +59,3 @@ To get a local copy up and running, follow these simple steps:
     ```
 
     The website should be accessible at `http://localhost:8000`.
-
-## Usage
-
-- **Adding Projects/Experiences**: Update the JSON or other data files located in `storage/data` to add or modify projects/experiences.
-- **Customizing Contents**: Modify the content of the `resources/views` directory to add your own customized contents.
-- **Styling**: Update the CSS styles as needed in the `public/css` directory to match your branding.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request for review.
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
-## Contact
-
-Nafis Ahmed - [n.ahmad.web.cit22@gmail.com
-](mailto:n.ahmad.web.cit22@gmail.com
-)
-
-GitHub: [ahmad-cit22](https://github.com/ahmad-cit22)
