@@ -37,11 +37,11 @@
     },
     "10": {
         "image": "event-10.jpg",
-        "title": "Pammigbig ken Pammadayaw"
+        "title": "Pammigbig ken Pammadayaw 2025"
     },
     "13": {
         "image": "event-13.jpeg",
-        "title": "Career Skill Enhancement"
+        "title": "Career Skill Enhancement 2024"
     },
     "15": {
         "image": "event-15.jpeg",
@@ -50,5 +50,13 @@
     "18": {
         "image": "event-18.jpeg",
         "title": "Day 2 of DICT Regional Road Show 2024"
+    },
+    "19": {
+        "image": "event-19.jpeg",
+        "title": "Graduation Day 2025"
+    },
+    "20": {
+        "image": "event-20.jpg",
+        "title": "Recognition Event 2025"
     }
 }

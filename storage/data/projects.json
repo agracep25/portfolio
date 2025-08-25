@@ -1,38 +1,33 @@
+[
+  {
+    "title": "Utilizing Predictive Analysis for Decision-Making on the Accreditation of Academic Programs",
+    "description": "The result of this study will be used as a foundation structure of the QA office and the university to address the recurring Areas needing improvement.",
+    "image": "capstone.jpg",
+    "tags": ["Python"]
+
+  },
 {
-    "1": {
-        "title": "Asset Management System",
-        "description": "A web-based task management application developed for small teams.",
-        "details": "Project Meta features real-time collaboration tools, task tracking, file sharing, and a simple, intuitive interface. Built with Laravel and Vue.js, it supports role-based access, enabling users to efficiently manage projects, delegate tasks, and track progress.",
-        "image": "tulips.jpg"
-    },
-    "2": {
-        "title": "Project Astra",
-        "description": "A customizable e-commerce platform for fashion retailers.",
-        "details": "Project Astra offers a responsive design, multi-currency support, and integrated payment gateways. Developed using Laravel and Livewire, it includes an admin dashboard for inventory management, sales analytics, and customer relationship management.",
-        "image": "tulips.jpg"
-    },
-    "3": {
-        "title": "Project Omega",
-        "description": "A content management system for bloggers and small publishers.",
-        "details": "Project Omega provides an easy-to-use interface for creating and managing blog posts, media galleries, and user comments. It’s built with Laravel and Tailwind CSS, supporting SEO optimization, social media integration, and multilingual content.",
-        "image": "lamp.jpg"
-    },
-    "4": {
-        "title": "Project Delta",
-        "description": "A B2B e-commerce site for wholesale electronics distribution.",
-        "details": "Project Delta includes features like bulk ordering, tiered pricing, and supplier management. The platform is built with Laravel and Bootstrap, supporting multiple payment methods, real-time order tracking, and a custom API for third-party integrations.",
-        "image": "turban.jpg"
-    },
-    "5": {
-        "title": "Project Zeta",
-        "description": "A student information system for educational institutions.",
-        "details": "Project Zeta offers modules for attendance tracking, grade management, and communication between teachers, students, and parents. Built with Laravel and React, it includes a secure login system, automated report generation, and a mobile-responsive design.",
-        "image": "woodcraft.jpg"
-    },
-    "6": {
-        "title": "Project Theta",
-        "description": "An online marketplace for handcrafted goods.",
-        "details": "Project Theta allows artisans to set up their shops, list products, and manage orders. Developed using Laravel and Alpine.js, it features a user-friendly dashboard, product reviews, seller profiles, and secure payment processing through Stripe and PayPal.",
-        "image": "tropical.jpg"
-    }
-}
+    "title": "Asset Management System",
+    "description": "This system assists in maintaining and organizing IT inventory, including computers, routers, and network equipment. Provide basic technical support in the IT office.",
+    "image": "Assets.png",
+    "tags": ["Laravel", "Blade", "PHP", "MySQL", "JavaScript", "Tailwind CSS"]
+  },
+{
+    "title": "3D Printer Shop Website.",
+    "description": "The website is has a function of buy, add to cart, add to favorites. The admin can post their own product and user/customer can buy items in the website.",
+    "image": "web.png",
+    "tags": ["HTML", "CSS", "MySQL", "JavaScript"]
+  },
+  {
+    "title": "Writing Letters through air using CNN. Final Project for Software Engineering.",
+    "description": "This is our final project for Software Engineering. The system can detect letters through air with just a pen. Our objective is to have cheaper learning material for childrens and teachers.",
+    "image": "se.jpg",
+    "tags": ["Python"]
+  },
+{
+    "title": "Calculator for Quantitative Methods.",
+    "description": "We created this in our second year for the final project of Quantitative methods. This calculator covers all quantitative equations we discuss in this subject.",
+    "image": "cal.png",
+    "tags": ["Python"]
+  }
+]

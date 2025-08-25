@@ -1,35 +1,41 @@
 @extends('layouts.app')
 
-@section('content')
+@section('container')
 
-    <section id="about" class="" style="margin-top: 150px !important">
+<div class="min-h-screen px-6 py-12">
+    <h1 class="text-center text-4xl font-bold text-gray-800 mb-10">My Projects</h1>
 
-        <div class="row s-about__content">
-            <div class="">
+    <div class="space-y-10">
+        @foreach ($projects as $key => $project)
+        <div class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden">
+            
+            {{-- Left side image --}}
+            <div class="w-full md:w-1/2">
+                <img src="{{ asset('images/folio/gallery/' . $project['image']) }}" 
+                     alt="{{ $project['title'] }}" 
+                     class="w-full h-64 md:h-full object-cover">
+            </div>
 
+            {{-- Right side details --}}
+            <div class="w-full md:w-1/2 p-6">
+                <h2 class="text-2xl font-bold text-gray-900">{{ $project['title'] }}</h2>
+                <p class="text-gray-600 mt-2">{{ $project['description'] }}</p>
 
+                {{-- Tags --}}
+                <div class="flex flex-wrap gap-2 mt-4">
+                    @foreach ($project['tags'] as $tag)
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">{{ $tag }}</span>
+                    @endforeach
+                </div>
 
-                <div class="grid-list-items s-about__blocks" style="margin-top: 0 !important">
-
-                    <div class="grid-list-items__item s-about__block">
-                        <h3 style="text-align: center" style="margin-top: 0 !important">Internship Experiences</h3>
-                        <ul class="s-about__list">
-                            @foreach ($workExperiences as $experience)
-                                <li>
-                                    {{ $experience['company'] }}
-                                    <span>{{ $experience['position'] }}</span>
-                                    <span class="work-duration-text">{{ $experience['duration'] }}</span>
-                                    <p class="work-description-text">{{ $experience['description'] }}</p>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div> <!--end s-about__block -->
-
-                </div> <!-- grid-list-items -->
-
-
-            </div> <!--end column -->
-        </div> <!--end s-about__content -->
-
-    </section> <!-- end s-about -->
+                {{-- Button --}}
+                <a href="{{ $project['link'] }}" 
+                   class="inline-block mt-6 px-5 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition">
+                    View Details
+                </a>
+            </div>
+        </div>
+        @endforeach
+    </div>
+</div>
 @endsection

@@ -175,31 +175,34 @@
             </div>
         </div>
 
-        <div class="row folio-entries">
+<div class="projects-container">
+    @foreach ($projects as $key => $project)
+        <div class="project-card">
+            <!-- Project Image -->
+            <div class="project-image">
+                <img src="{{ asset('images/folio/gallery/' . $project['image']) }}" 
+                     alt="{{ $project['title'] }}">
+            </div>
 
-            @foreach ($projects as $key => $project)
-                <div class="column entry">
-                    <a href="{{ asset('images/folio/gallery/' . $project['image']) }}" class="entry__link glightbox"
-                        data-glightbox="title: {{ $project['title'] }}; description: .entry__desc-{{ $key }}">
-                        <div class="entry__thumb">
-                            <img src="{{ asset('images/folio/' . $project['image']) }}" alt="">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">{{ $project['title'] }}</h4>
-                            <div class="entry__cat">{{ $project['description'] }}</div>
-                        </div>
-                    </a>
+            <!-- Project Details -->
+            <div class="project-details">
+                <h3 class="project-title">{{ $project['title'] }}</h3>
+                <p class="project-description">{{ $project['description'] }}</p>
 
-                    <div class="glightbox-desc entry__desc-{{ $key }}">
-                        <p>
-                            {{ $project['details'] }}
-                            <a href="{{ route('project.details', $key) }}">Project Link</a>.
-                        </p>
-                    </div>
-                </div> <!-- entry -->
-            @endforeach
+                <!-- Tags -->
+                <div class="project-tags">
+                    @foreach ($project['tags'] as $tag)
+                        <span class="tag">{{ $tag }}</span>
+                    @endforeach
+                </div>
 
-        </div> <!-- folio entries -->
+            </div>
+        </div>
+    @endforeach
+</div>
+
+
+
 
 
         <div class="row s-testimonials">
